@@ -8,7 +8,6 @@ public class Empleados {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Random random = new Random();
 
         boolean jefeDepartamento = false;
 
@@ -19,16 +18,15 @@ public class Empleados {
         int edad = Integer.parseInt(entrada.nextLine());
 
         System.out.print("Digite su Salario: ");
-        double SalarioEmpleado = random.nextDouble() * 6000000;
-        System.out.println("Salario:" + 300000);
+        double salarioEmpleado = entrada.nextDouble();
 
         System.out.println("¿El empleado es jefe de Departamento?:");
         boolean EsJefedeDepartamento = entrada.nextBoolean();
-        System.out.println("Jefe de Departamento" + (EsJefedeDepartamento ? "Sí" : "No"));
+
 
         System.out.println("=====Información del Empleado====");
         String nombre = "steven";
-        System.out.println("Nombre:" + steven);
+        System.out.println("Nombre:" + NombreEmpleado);
         System.out.println("Edad:" + 32);
         System.out.println("Salario:" + 300000);
         System.out.println("Jefe de Departamento" + (EsJefedeDepartamento ? "Sí" : "No"));
